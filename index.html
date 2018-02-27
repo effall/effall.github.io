@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -112,7 +112,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/01/浅析跨域/" data-id="cje52w1d20001c4nra34salpy" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/02/01/浅析跨域/" data-id="cje53xj0v0002gwnr7u4xsel2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -149,7 +149,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/08/bit/" data-id="cje52w1cv0000c4nrbeeta9ix" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/08/bit/" data-id="cje53xj0a0001gwnrlwjyx0xb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -184,7 +184,7 @@
         <p>之前尝试过在csdn上写博客，翻看记录，发现14年和16年各写了一篇，然后就没有然后了。。<br>后来一直用Evernote写写笔记，写了大概30多篇吧。写笔记是给自己看的，写博客是给自己和别人一起看的，在写的时候心态肯定不一样。<br>至于我为什么没有坚持下去，大概是因为我语文水平真的太差了吧~~依然记得自己高考语文只考了102……<br>现在之所以又重新倒腾，是为了监督自己，stay huagry,stay foolish.让自己去保持一种学习的状态，以博客的形式将自己的收获展示出来。<br>好了不废话了，下面开始说怎么从小白开始用hexo搭建自己的博客。</p>
 <h1 id="一、github创建仓库"><a href="#一、github创建仓库" class="headerlink" title="一、github创建仓库"></a>一、github创建仓库</h1><h2 id="1、创建仓库"><a href="#1、创建仓库" class="headerlink" title="1、创建仓库"></a>1、创建仓库</h2><p><img src="../img/new.png" alt="创建仓库"><br><img src="../img/name.png" alt="创建仓库"><br>输入仓库名称后，点击create repository即可。</p>
 <h2 id="2、生成秘钥"><a href="#2、生成秘钥" class="headerlink" title="2、生成秘钥"></a>2、生成秘钥</h2><p>执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"github的邮箱地址"</span></span><br></pre></td></tr></table></figure></p>
-<p>一路enter后可能会让你输入github的账号密码，输入即可。最后会在你电脑的C:\Users\effall.ssh目录下生成id_rsa.pub,用记事本打开id_rsa.pub，复制所有内容，然后打开<a href="https://github.com/settings/ssh" target="_blank" rel="noopener">github ssh 配置</a><br>点击new ssh key:<br><img src="../img/ssh.png" alt="new ssh key"><br>最后点击add ssh key即可。<br>至此，github上的操作告一段落。</p>
+<p>一路enter后可能会让你输入github的账号密码，输入即可。最后会在你电脑的C:\Users\effall\.ssh目录下生成id_rsa.pub,用记事本打开id_rsa.pub，复制所有内容，然后打开<a href="https://github.com/settings/ssh" target="_blank" rel="noopener">github ssh 配置</a><br>点击new ssh key:<br><img src="../img/ssh.png" alt="new ssh key"><br>最后点击add ssh key即可。<br>至此，github上的操作告一段落。</p>
 <h1 id="二、安装nodejs和git"><a href="#二、安装nodejs和git" class="headerlink" title="二、安装nodejs和git"></a>二、安装nodejs和git</h1><p>此处就不详细说明了，没装的自己去百度教程。</p>
 <h1 id="三、安装hexo"><a href="#三、安装hexo" class="headerlink" title="三、安装hexo"></a>三、安装hexo</h1><p>让我们来看看hexo的官网<a href="https://hexo.io/" target="_blank" rel="noopener">hexo官网</a>:<br><img src="../img/hexo.png" alt="hexo"><br>就这么几步就可以跑起来了~~<br>下面来详细说明：</p>
 <h2 id="1、安装hexo"><a href="#1、安装hexo" class="headerlink" title="1、安装hexo"></a>1、安装hexo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
@@ -202,14 +202,14 @@
 <p>这里的repo地址就是第一步在github上创建的仓库的地址,hexo部署就是部署到这个地址<br><img src="../img/res.png" alt=""></p>
 <h1 id="五、部署到github"><a href="#五、部署到github" class="headerlink" title="五、部署到github"></a>五、部署到github</h1><p>先安装hexo-deployer-git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
 <p>然后执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
-<p>然后打开github就可以看到部署上去的东西：<br><img src="../img/code.png" alt=""><br>最后，在浏览器中打开：<a href="https://effall.github.io/" target="_blank" rel="noopener">https://effall.github.io/</a> 就可以访问自己的博客了~~</p>
+<p>然后打开github就可以看到部署上去的东西：<br><img src="../img/code.png" alt=""><br>最后，在浏览器中打开：<a href="https://effall.github.io/" target="_blank" rel="noopener">https://effall.github.io/</a> 就可以访问自己的博客了~~<br>注意：今天突然使用hexo deploy的时候，报错：<br><img src="../img/wrong.png" alt=""><br>unable to access github ..<br>解决方法：<br>把第四步里面的github地址改成shh格式的：<br>git@github.com:effall/effall.github.io.git<br>在重新执行即可。</p>
 <hr>
 <p>the end.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/07/hexo/" data-id="cje52w1d80002c4nr2ortfr0s" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/07/hexo/" data-id="cje53xizr0000gwnrttkicsmc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -235,7 +235,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
     </div>
@@ -245,7 +245,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
